@@ -35,7 +35,8 @@ int itemCount=0;
 
                 while (await reader.ReadAsync())
                 {
-                    if (reader.TokenType == JsonToken.PropertyName && reader.Value.ToString() == "Mails")
+                    if (reader.TokenType == JsonToken.PropertyName && 
+                     reader.Value.ToString().ToLower().Trim() == "mails")
                     {
                         if (!arrayFound)
                         {
