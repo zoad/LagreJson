@@ -1,0 +1,11 @@
+C:\gitRepos\DotNetCorePra\LargeJson\bin\Debug\netcoreapp2.2\LargeJson.deps.json
+C:\gitRepos\DotNetCorePra\LargeJson\bin\Debug\netcoreapp2.2\LargeJson.runtimeconfig.json
+C:\gitRepos\DotNetCorePra\LargeJson\bin\Debug\netcoreapp2.2\LargeJson.runtimeconfig.dev.json
+C:\gitRepos\DotNetCorePra\LargeJson\bin\Debug\netcoreapp2.2\LargeJson.dll
+C:\gitRepos\DotNetCorePra\LargeJson\bin\Debug\netcoreapp2.2\LargeJson.pdb
+C:\gitRepos\DotNetCorePra\LargeJson\obj\Debug\netcoreapp2.2\LargeJson.csprojAssemblyReference.cache
+C:\gitRepos\DotNetCorePra\LargeJson\obj\Debug\netcoreapp2.2\LargeJson.csproj.CoreCompileInputs.cache
+C:\gitRepos\DotNetCorePra\LargeJson\obj\Debug\netcoreapp2.2\LargeJson.AssemblyInfoInputs.cache
+C:\gitRepos\DotNetCorePra\LargeJson\obj\Debug\netcoreapp2.2\LargeJson.AssemblyInfo.cs
+C:\gitRepos\DotNetCorePra\LargeJson\obj\Debug\netcoreapp2.2\LargeJson.dll
+C:\gitRepos\DotNetCorePra\LargeJson\obj\Debug\netcoreapp2.2\LargeJson.pdb
