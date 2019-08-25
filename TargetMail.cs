@@ -100,6 +100,6 @@ public partial class TargetMail
 
     public override string ToString()
     {
-        return $"{Id} - {CustomerKey} - {EmailAddress}";
+        return $"{Id} - {CustomerKey} - {LastName} - {EmailAddress}";
     }
 }
