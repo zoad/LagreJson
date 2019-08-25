@@ -25,7 +25,7 @@ namespace LargeJson
             JsonSerializer serializer = new JsonSerializer();
             TargetMail p;
 
-int itemCount=0;
+            int itemCount = 0;
             using (Stream s = File.Open(filePath, FileMode.Open))
             using (StreamReader sr = new StreamReader(s))
             using (JsonReader reader = new JsonTextReader(sr))
@@ -35,16 +35,17 @@ int itemCount=0;
 
                 while (await reader.ReadAsync())
                 {
-                    if (reader.TokenType == JsonToken.PropertyName && 
-                     reader.Value.ToString().ToLower().Trim() == "mails")
+                    if (!arrayFound)
                     {
-                        if (!arrayFound)
+                        if (reader.TokenType == JsonToken.PropertyName &&
+                                          reader.Value.ToString().ToLower().Trim() == "mails")
                         {
+                            arrayFound = true;
                             isInArray = true;
                         }
-                    }
+                    }                   
 
-                    if (isInArray)
+                    if (isInArray) //TODO: what about .Skip or .SkipAsync?
                     {
                         try
                         {
@@ -54,7 +55,7 @@ int itemCount=0;
                                 // json size doesn't matter because only a small piece is read at a time from the HTTP request
 
                                 p = serializer.Deserialize<TargetMail>(reader);
-                                Console.WriteLine( $"{++itemCount} => {p}");
+                                Console.WriteLine($"{++itemCount} => {p}");
 
                                 //or
                                 //Console.WriteLine(serializer.Deserialize<TargetMail>(reader));
